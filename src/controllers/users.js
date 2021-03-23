@@ -15,7 +15,7 @@ const getAllUsers = (req, res) => {
         id: 2,
         name: 'Natali'
     }]
-    throw new Error('Error');
+    
     res.json(users);
 }
 
