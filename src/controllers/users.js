@@ -1,6 +1,12 @@
 const express = require('express');
 
+/**
+ * @param {express.Request} req
+ * @param {express.Response} res
+ */
+
 const getAllUsers = (req, res) => {
+
     const users = [{
         id: 1,
         name: 'Patricio'
@@ -9,9 +15,14 @@ const getAllUsers = (req, res) => {
         id: 2,
         name: 'Natali'
     }]
-    
+    throw new Error('Error');
     res.json(users);
 }
+
+/**
+ * @param {express.Request} req
+ * @param {express.Response} res
+ */
 
 const createUser = (req, res) => {
 
@@ -21,9 +32,14 @@ const createUser = (req, res) => {
         id,
         name
     }
-
+    
     res.status(201).json(user);
 }
+
+/**
+ * @param {express.Request} req
+ * @param {express.Response} res
+ */
 
 const updateUser = (req, res) => {
 
@@ -35,6 +51,11 @@ const updateUser = (req, res) => {
     res.json(message);
 }
 
+/**
+ * @param {express.Request} req
+ * @param {express.Response} res
+ */
+
 const modifyUser = (req, res) => {
 
     const message = {
@@ -43,6 +64,11 @@ const modifyUser = (req, res) => {
 
     res.json(message);
 }
+
+/**
+ * @param {express.Request} req
+ * @param {express.Response} res
+ */
 
 const deleteUser = (req, res) => {
 
