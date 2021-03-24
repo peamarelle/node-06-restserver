@@ -8,6 +8,8 @@
 
 * Run command npm install
 
+* Generate .env file.
+
 # Scripts
 
 * Run npm run dev to nodemon mode.

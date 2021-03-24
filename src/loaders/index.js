@@ -1,5 +1,6 @@
 const {ExpressServer} = require('./server/expressServer');
 const config = require('../config')
+const logger = require('../loaders/logger')
 
 module.exports = async () => {
 
@@ -7,7 +8,7 @@ module.exports = async () => {
 
     server.start();
 
-    console.log('########################################');
-    console.log(`Server listening on port ${config.port}`);
-    console.log('########################################');
+    logger.info(`########################################
+    Server listening on port ${config.port}
+    ########################################`);
 }
