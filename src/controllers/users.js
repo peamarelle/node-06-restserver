@@ -8,11 +8,11 @@ const express = require('express');
 const getAllUsers = (req, res) => {
 
     const users = [{
-        id: 1,
+        id: '605407f340bc9e39749e20a0',
         name: 'Patricio'
     },
     {
-        id: 2,
+        id: '605407f340bc9e39749e20a1',
         name: 'Natali'
     }]
     
